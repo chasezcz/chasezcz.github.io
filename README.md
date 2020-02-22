@@ -1,24 +1,23 @@
-# 码志
+# Chase Blog
 
-我的个人博客：<https://mazhuang.org>，欢迎 Star 和 Fork。
+我的个人博客：<https://chasezcz.github.io>，欢迎 Star 和 Fork。
 
 ## 概览
 
 <!-- vim-markdown-toc GFM -->
 
-* [效果预览](#效果预览)
-* [Fork 指南](#fork-指南)
-* [贴心提示](#贴心提示)
-* [经验与思考](#经验与思考)
-* [致谢](#致谢)
+- [Chase Blog](#chase-blog)
+  - [概览](#概览)
+  - [效果预览](#效果预览)
+  - [Fork 指南](#fork-指南)
+  - [贴心提示](#贴心提示)
+  - [致谢](#致谢)
 
 <!-- vim-markdown-toc -->
 
 ## 效果预览
 
-**[在线预览 &rarr;](https://mazhuang.org)**
-
-![screenshot home](https://mazhuang.org/assets/images/screenshots/home.png)
+**[在线预览](https://chasezcz.github.io)**
 
 ## Fork 指南
 
@@ -55,27 +54,25 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
 ## 贴心提示
 
-1. 排版建议遵照一定的规范，推荐 [中文文案排版指北（简体中文版）][1]。
+1. 建议：当fork之后，为了便于git管理，可以将之前的所有 commit 合并成一次 commit
+   
+   `$ git reset $(git commit-tree HEAD^{tree} -m "A new start")`
+   
+   **注意：** 这里的`A new start`只是一个例子，可随意添加。
 
-2. 在本地预览博客效果可以参考 [Setting up your Pages site locally with Jekyll][2]。
+   之后，再提交的时候会出现远端仓库和本地仓库历史不符的现象，可以使用强制推送解决。
+   
+   `$ git push --force`
 
-## 经验与思考
+2. 排版建议遵照一定的规范，推荐 [中文文案排版指北（简体中文版）][1]。
 
-* 简约，尽量每个页面都不展示多余的内容。
+3. 在本地预览博客效果可以参考 [Setting up your Pages site locally with Jekyll][2]。
 
-* 有时一图抵千言，有时可能只会拖慢网页加载速度。
 
-* 言之有物，不做无痛之呻吟。
-
-* 如果写技术文章，那先将技术原理完全理清了再开始写，一边摸索技术一边组织文章效率较低。
-
-* 杜绝难断句、难理解的长句子，如果不能将其拆分成几个简洁的短句，说明脑中的理解并不清晰。
-
-* 可以学习一下那些高质量的博主，他们的行文，内容组织方式，有什么值得借鉴的地方。
 
 ## 致谢
 
-本博客外观基于 [DONGChuan](https://dongchuan.github.io) 修改，感谢！
+本博客外观基于 [码志](https://mazhuang.org) 修改，感谢！
 
 [1]: https://github.com/mzlogin/chinese-copywriting-guidelines
 [2]: https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/

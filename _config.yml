@@ -2,12 +2,12 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://mazhuang.org
+url: https://chasezcz.github.io
 date_format: "ordinal"
-title: 码志
-subtitle: "打码改变人生"
-description: "马壮的个人博客"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang
+title: 阿泽的自留地
+subtitle: "NEVER STOP"
+description: "张成泽的个人博客"
+keywords: 博客, chase, Chengze Zhang, chasezcz, chengze
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
@@ -15,12 +15,12 @@ side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Zhuang Ma
-organization: 
+author: Chase Zhang
+organization: NONE
 organization_url: 
-github_username: mzlogin
-location: Wuhan, China
-email: chumpma@gmail.com
+github_username: chasezcz
+location: BeiJing, China
+email: chengze1996@gmail.com
 
 # ---------------- #
 #    Navigation    #
@@ -34,9 +34,9 @@ navs:
     href: /categories/
     label: 分类
 
-#   -
-#     href: /archives/
-#     label: 归档
+  # -
+  #   href: /archives/
+  #   label: 归档
 
   -
     href: /wiki/
@@ -81,7 +81,7 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: mzlogin/mzlogin.github.io
+repository: chasezcz/chasezcz.github.io
 
 # ---------------- #
 #      Comments    #
@@ -114,7 +114,7 @@ lazy_load_disqus : false
 # ---------------- #
 simple_jekyll_search:
     # 是否支持全文搜索
-    fulltext: false
+    fulltext: true
     # 最多显示多少条搜索结果
     limit: 10
 
