@@ -1,18 +1,18 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+description: 生命不息，奋斗不止
+keywords: Chase Zhang, Chengze Zhang, 张成泽
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+我是张成泽，热爱科技，坚信代码可以改变世界。
 
-仰慕「优雅编码的艺术」。
+大道三千，我择于此。
 
-坚信熟能生巧，努力改变人生。
+Believe in Science, Respect gods.
 
 ## 联系
 
