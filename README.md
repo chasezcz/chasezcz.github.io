@@ -54,7 +54,7 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
 ## 贴心提示
 
-1. 建议：当fork之后，为了便于git管理，可以将之前的所有 commit 合并成一次 commit
+1. 建议：当fork之后，为了便于git管理，可以将之前的所有 commit 合并成一次 commit。
    
    `$ git reset $(git commit-tree HEAD^{tree} -m "A new start")`
    

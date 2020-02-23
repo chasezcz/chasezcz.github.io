@@ -20,6 +20,8 @@ Believe in Science, Respect gods.
 * {{ website.sitename }}：[@{{ website.name }}]({{ website.url }})
 {% endfor %}
 
+* Email: chengze1996@gmail.com
+
 ## Skill Keywords
 
 {% for category in site.data.skills %}
