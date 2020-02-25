@@ -20,7 +20,7 @@ keywords: Manjaro install, Manjaro 安装
     最为炫酷  ~~(可装B)~~ ，同时要求性能较高，同时交互方式丰富，插件也很多。
 
 - XFCE 版：
-  
+
     最为轻便，但是很丑。。。
 
 一般来说，对性能没有太大要求就上 KDE，喜欢简单交互就 XFCE 版，至于 Gnome 嘛，大部分都是从 Ubuntu 来的，谁不想换换口味呢？
@@ -37,7 +37,7 @@ keywords: Manjaro install, Manjaro 安装
 # 2. 刻录镜像到U盘
 
 ## Windows 用户
-    
+
 下载 [Rufus](http://rufus.akeo.ie) 工具进行操作
 
 ![这就是Rufus](/images/blog/2020-02-23-manjaro-start/rufus_en.png)
@@ -55,9 +55,13 @@ keywords: Manjaro install, Manjaro 安装
 
 1. 查到U盘的dev路径
 
-   `sudo fdisk -l`
-   
-   之后如图
+    `sudo fdisk -l`
+
+    之后如图
+
+    ![dd效果图](/images/blog/2020-02-23-manjaro-start/dd.png)
+
+    `/dev/sdc` 就是我的 4G U盘的 dev 路径。这个路径自己记下。
 
 1. 使用 dd 命令
 
@@ -70,7 +74,39 @@ keywords: Manjaro install, Manjaro 安装
 
 # 3. 重启，进入 USB Live 环境
 
-就是开机的时候狂按某一个键进入　USB 启动就好了。
+就是开机的时候狂按某一个键进入 USB 启动就好了。
 
 # 4. Live 中的操作
 
+## 设置源
+
+打开终端，运行
+
+`sudo pacman-mirrors -c China -m rank`
+
+选取中国节点，之后强制更新所有源信息
+
+`sudo pacman -Syy`
+
+>更换源的操作为了防止出现卡在 93% `Misc postinstall configurations` 的错误。
+
+## 分区
+
+![live环境的安装](/images/blog/2020-02-23-manjaro-start/live.png)
+
+这里选择 `擦除磁盘`来安装，如果自定义分区安装（双系统），可以使用
+
+| 分区 | 大小 |
+| :--: | :--: |
+|  `swap`    |   `2G`   |
+|   `/`   |   `剩余的空间`   |
+
+> 注意：`/boot/efi` 请指定到原系统的 `efi` 分区，否则会无法引导。
+
+
+## 安装
+
+
+![](/images/blog/2020-02-23-manjaro-start/5minutes-later.png)
+
+### 重启，enjoy Manjaro!
