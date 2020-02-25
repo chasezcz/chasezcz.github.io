@@ -1,4 +1,8 @@
-# Shadowsocks/ShadowsocksR/bbr 一键部署
+# Shadowsocks/ShadowsocksR/bbr 
+
+## 方法一：
+
+**一键部署**
 
 ```
 git clone -b master https://github.com/flyzy2005/ss-fly
@@ -6,4 +10,18 @@ cd ss-fly
 ./ss-fly -i %password% %port%
 ./ss-fly -bbr
 ```
+
+## 方法二：
+
+```
+wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+chmod +x shadowsocks-all.sh
+./shadowsocks-all.sh
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
+chmod +x bbr.sh
+./bbr.sh
+```
+
+建议选择 `shadowsocks-libev` 
+
 
