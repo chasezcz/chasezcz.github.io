@@ -17,7 +17,7 @@ side_bar_repo_limit: 5
 # ---------------- #
 author: Chase Zhang
 # organization: NONE
-organization_url: 
+organization_url:
 github_username: chasezcz
 location: BeiJing, China
 email: chengze1996@gmail.com
@@ -26,29 +26,24 @@ email: chengze1996@gmail.com
 #    Navigation    #
 # ---------------- #
 navs:
-  -
-    href: /
-    label: 首页
+    - href: /
+      label: 首页
 
-  -
-    href: /categories/
-    label: 分类
+    - href: /categories/
+      label: 分类
 
-  # -
-  #   href: /archives/
-  #   label: 归档
+    - href: /archives/
+      label: 归档
 
-  # -
-  #   href: /wiki/
-  #   label: 维基
+    - href: /wiki/
+      label: 维基
 
-  # -
-  #   href: /links/
-  #   label: 链接
+    # -
+    #   href: /links/
+    #   label: 链接
 
-  -
-    href: /about/
-    label: 关于
+    - href: /about/
+      label: 关于
 
 # ---------------- #
 #       RSS        #
@@ -70,7 +65,7 @@ permalink: /:year/:month/:day/:title/
 gems:
     - jekyll-github-metadata
     - rouge
-#     - jekyll-html-pipeline
+    #     - jekyll-html-pipeline
     - jekyll-paginate
     - jekyll-sitemap
     - jekyll-feed
@@ -87,27 +82,27 @@ repository: chasezcz/chasezcz.github.io
 #      Comments    #
 # ---------------- #
 # support provider: disqus, gitment, gitalk
-comments_provider: 
+comments_provider:
 # !!!重要!!! 请修改下面这些信息为你自己申请的
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
 disqus:
-    username: 
+    username:
 # https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: 
-    repo: 
+    owner:
+    repo:
     oauth:
-        client_id: 
-        client_secret: 
+        client_id:
+        client_secret:
 # https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: 
-    repo: 
-    clientID: 
-    clientSecret: 
+    owner:
+    repo:
+    clientID:
+    clientSecret:
 # 在使用其它评论组件时可点击显示 Disqus
-lazy_load_disqus : true
+lazy_load_disqus: true
 
 # ---------------- #
 #      Search      #
