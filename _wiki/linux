@@ -1,9 +1,9 @@
-# Shadowsocks 一键部署
+# Shadowsocks/ShadowsocksR/bbr 一键部署
 
 ```
 git clone -b master https://github.com/flyzy2005/ss-fly
 cd ss-fly
-./ss-fly -i %password%
+./ss-fly -i %password% %port%
 ./ss-fly -bbr
 ```
 
