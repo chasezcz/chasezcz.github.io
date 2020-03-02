@@ -16,7 +16,7 @@ keywords: Linux
 
 # 常用安装
 
-## Shadowsocks/ShadowsocksR/bbr
+## Shadowsocks/ShadowsocksR/bbr 服务端
 
 ### 方法一：
 
@@ -39,3 +39,15 @@ chmod +x bbr.sh
 ```
 
 建议选择 `shadowsocks-libev`
+
+## 客户端
+
+>pyhton版本一般适用于linux及mac用户
+
+```
+git clone https://github.com/Bllinger/shadowsocksr.git
+cd sadowsocksr
+./initcfg.sh # 创建 user-config.json
+vim user-config.json # 填入自己的信息
+python shadowsocks/local.py -d start # OK
+```
