@@ -2,7 +2,7 @@
 layout: post
 title: 知识图谱的概述
 categories: [Knowledge Graph]
-description: 知识图谱的定义与建模
+description: 知识图谱的定义与特点，知识的表示形式，知识图谱的表示形式。
 keywords: knowledge graph， 知识图谱的定义
 ---
 
